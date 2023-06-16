@@ -1,0 +1,154 @@
+
+*{
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 20px #aaaaaa;
+    animation: fadeVisibility 5s ease;
+}
+
+a{
+  text-shadow: 0px 0px 20px #aaaaaa;
+  font-size: 1rem;
+  color: white;
+}
+
+main{
+  padding: 1em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input{
+  box-sizing: border-box;
+  border:  1px solid #5f9341;
+  margin-bottom: 4px;
+}
+
+.link{
+  margin-top:-1rem;
+  border-radius: 3px;
+}
+
+button{
+  border-radius: 3px;
+  font-family: 'Source San Pro',sans-serif;
+  background-image: linear-gradient(to left,#ff713b, #ffa51d);
+  color: white;
+  border: 0;
+  cursor: pointer;
+  transition: transform color 250ms;
+  font-size: .7rem;
+}
+
+button:hover{
+  color: black;
+  transform: scale(1.1);
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+}
+
+#time{
+  font-size: 2rem;
+  align-self: center;
+  position: absolute;
+}
+
+
+#crypto-top{
+  display: flex;
+  align-items: center;
+}
+
+#crypto{
+  font-size: 1.3rem;
+}
+
+.crypto-name{
+  margin-left: .8em;
+}
+
+div#crypto > p{
+margin: 0;
+}
+
+#bot{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+
+#crypto{
+width: 85vh;
+height: 65vh;
+}
+
+
+.schedule{
+image-rendering: -moz-crisp-edges; /* Firefox */
+image-rendering: -o-crisp-edges; /* Opera */
+image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+image-rendering: crisp-edges;
+-ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#weather{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-self: flex-start;
+}
+
+.city{
+  width: 100%;
+  text-align: right;
+  margin: 0;
+  font-size: 1.5rem;
+  margin-top: -1em;
+}
+
+.temp{
+  margin: 0;
+  font-size: 1.7rem;
+  margin-left: -0.4em;
+}
+
+.tz{
+  font-size:1.2rem;
+}
+
+@keyframes fadeVisibility {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+/* border: 1px solid black; */
+/* //  (Note I've already added some CSS to resize the image within the window.
+//   Instructions for this were found on CSS Tricks: 
+//   https://css-tricks.com/perfect-full-page-background-image/#awesome-easy-progressive-css3-way) */
